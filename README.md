@@ -2,9 +2,7 @@
 
 ## **Live Site**
 
-[Auvral Live Site](https://auvral.web.app)
-_or_
-[Auvral Live Site](https://auvral.surge.sh)
+[Auvral Live Site](https://auvral-11.netlify.app/)
 
 ---
 
