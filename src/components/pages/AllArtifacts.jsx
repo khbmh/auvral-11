@@ -36,14 +36,14 @@ function AllArtifacts() {
           id="search"
           type="text"
           placeholder="Search by artifact name"
-          className="input input-bordered w-1/2"
+          className="input text-black input-bordered w-1/2"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8">
         {filteredData.map((artifact) => (
-          <div key={artifact._id} className="card border shadow-xl">
+          <div key={artifact._id} className="card border border-green-400">
             <figure>
               <img
                 src={artifact.artifactImage}

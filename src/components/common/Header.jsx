@@ -91,6 +91,14 @@ function Header({ isDark, setIsDark }) {
                   userLoading && 'invisible'
                 } navbar-end space-x-3 flex ml-2`}
               >
+                <div className="flex justify-center items-center">
+                  <p
+                    className="hover:cursor-pointer"
+                    onClick={() => setIsDark(!isDark)}
+                  >
+                    {isDark ? <MdOutlineWbSunny /> : <IoMoonOutline />}
+                  </p>
+                </div>
                 <Link to="/login" className="btn mid btn-success">
                   Login
                 </Link>
