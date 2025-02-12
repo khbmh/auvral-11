@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react';
 // import { DataContext } from '../contexts/DataContext';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import { DataContext } from '../contexts/DataContext';
 
 function AllArtifacts() {
-  const {data} = useContext(DataContext)
+  const { data } = useContext(DataContext);
   const [searchQuery, setSearchQuery] = useState('');
   // console.log(data);
   // Filter artifacts based on the search query
@@ -26,10 +26,7 @@ function AllArtifacts() {
         All Artifacts
       </h1>
       <div className="mb-8 flex items-center justify-between">
-        <label
-          htmlFor="search"
-          className="block text-lg font-medium"
-        >
+        <label htmlFor="search" className="block text-lg font-medium">
           Search Artifacts
         </label>
         <input
@@ -52,15 +49,9 @@ function AllArtifacts() {
               />
             </figure>
             <div className="card-body">
-              <h2 className="text-2xl font-bold">{artifact.artifactName}</h2>
-              <p>
-                <strong>Type:</strong> {artifact.artifactType}
-              </p>
-              <p>
-                <strong>Created At:</strong> {artifact.createdAt}
-              </p>
-              <p>
-                <strong>Discovered At:</strong> {artifact.discoveredAt}
+              <h2 className="text-xl font-bold">{artifact.artifactName}</h2>
+              <p className="opacity-60">
+                {artifact.historicalContext.substring(0, 72)}...
               </p>
               <div className="card-actions justify-end">
                 <Link

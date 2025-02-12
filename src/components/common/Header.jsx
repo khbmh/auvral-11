@@ -5,14 +5,12 @@ import { MdOutlineWbSunny } from 'react-icons/md';
 import { IoMoonOutline } from 'react-icons/io5';
 
 function Header({ isDark, setIsDark }) {
-  console.log(isDark);
-
   const { user, logOut, userLoading } = useContext(AuthContext);
 
   const [isHovered, setIsHovered] = useState(false);
   const [isPhotoHovered, setIsPhotoHovered] = useState(false);
   const menu = (
-    <ul className="flex flex-col lg:flex-row gap-3 font-bold lg:gap-6">
+    <ul className="flex flex-col lg:flex-row gap-3 font-bold lg:gap-8">
       <NavLink to="/">Home</NavLink>
       <NavLink to="/all-artifacts">All artifacts</NavLink>
       <NavLink to="/add-artifacts">Add artifacts</NavLink>

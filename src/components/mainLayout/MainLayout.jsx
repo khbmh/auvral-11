@@ -9,7 +9,7 @@ function MainLayout() {
   return (
     <div
       className={`${
-        isDark ? 'text-white bg-[#181717]' : 'text-black bg-[#f2e6e6]'
+        isDark ? 'text-white bg-[#181717]' : 'text-black bg-[#faf7f7]'
       }`}
     >
       <Header isDark={isDark} setIsDark={setIsDark} />
