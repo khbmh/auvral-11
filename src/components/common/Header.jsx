@@ -40,9 +40,7 @@ function Header({ isDark, setIsDark }) {
   return (
     <div className="w-full h-[10vh] flex justify-center items-center">
       <div
-        className={`navbar z-40 fixed mid h-[10vh] ${
-          isDark ? 'bg-black/80' : 'bg-white/80'
-        }`}
+        className={`navbar z-40 fixed mid h-[10vh] backdrop-blur-xl`}
       >
         <div className="navbar-start">
           <div className="dropdown">
