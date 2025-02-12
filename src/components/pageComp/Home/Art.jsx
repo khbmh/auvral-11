@@ -25,7 +25,7 @@ function Art() {
             </figure>
             <div className="card-body">
               <h2 className="text-xl font-bold">{artifact.artifactName}</h2>
-              <p className='opacity-60'>{artifact.historicalContext.substring(0, 72)}...</p>
+              <p className='opacity-60'>{artifact.historicalContext.substring(0, 67)}...</p>
               <div className="card-actions justify-end">
                 <Link
                   to={`/artifact/${artifact._id}`}
